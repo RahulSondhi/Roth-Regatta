@@ -16,5 +16,9 @@
     "roundInfo": {
         "roundNumber":1,
         "roundTimeEnd":"May 30, 2020 11:59:59"
+    },
+    "formInfo":{
+        "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSffxswdaqd0dDNrDRfrqoFxwNRHQ55NLbkj0KaMkJ1e5b_6Iw/viewform",
+        "resultSheetLink":"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3NI0ovdre_2ToIbZG6oeg0qPu7vbQMTnIJiqgJUS16alh1wwd3fj7L6A2t63fmXSNhQqHNo6q5d8j/pub?gid=2044632216&single=true&output=csv"
     }
 }

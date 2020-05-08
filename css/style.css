@@ -61,7 +61,6 @@ body {
 }
 
 #footer{
-    margin-top: 1.5rem;
     padding: 1.5rem;
     font-size: 1.3rem;
     background-color: var(--light-grass);
@@ -78,4 +77,9 @@ body {
     display: block;
 }
 
+
+#results{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, var(--light-grass) 45%);
+    background-color: rgba(0, 0, 0, 0);
+}
 

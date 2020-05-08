@@ -12,19 +12,19 @@ function loadMobile(size) {
     if(size == "sm" || size == "xs"){
         $('.cloud').html('');
     }else{
-        $('.cloud').html('<object type="image/svg+xml"data="assets/cloud.svg"></object>');
+        $('.cloud').html('<object type="image/svg+xml"data="./assets/cloud.svg"></object>');
     }
 }
 
 function loadInfo() {
     $.ajax({
-        url:'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3NI0ovdre_2ToIbZG6oeg0qPu7vbQMTnIJiqgJUS16alh1wwd3fj7L6A2t63fmXSNhQqHNo6q5d8j/pub?gid=2044632216&single=true&output=csv',
+        url:'./data/data.json',
         cache: false
-    }).done(function (stats) {
+    }).done(function (data) {
         $.ajax({
-            url: './data/data.json',
+            url: data.formInfo.resultSheetLink,
             cache: false
-        }).done(function (data) {
+        }).done(function (stats) {
             buildRound(data,stats);
         })
     })
@@ -35,6 +35,7 @@ function buildRound(data,teamStats) {
     var roundInfo = data.roundInfo;
 
     $("#roundNum").html(roundInfo.roundNumber);
+    $("#voting").html('<div class="button col-sm-6 offset-sm-3" onclick="window.location.href='+"'"+data.formInfo.formLink+"'"+'">Vote Here</div>')
 
     buildTimer(roundInfo.roundTimeEnd);
 
@@ -80,7 +81,7 @@ function buildTeams(teamInfo,teamStats) {
     for (var key of keys) {
 
         var team = teamInfo[key];
-        var component = $("<div><div class='text-center'>" + team.name + "</div><img class='text-center rounded img-fluid' src='" + team.img + "'></div>");
+        var component = $("<div><div class='text-center pageSubtitle'>" + team.name + "</div><img class='text-center rounded img-fluid' src='" + team.img + "'></div>");
 
         if (key == "teamC") {
             component.addClass("col-sm-8 col-md-6 offset-sm-2 offset-md-3");
@@ -105,6 +106,8 @@ function loadStats(data){
     }
 
     console.log(teamStats);
+
+    $('#results').html('<object type="image/svg+xml"data="assets/pond.svg" class="col-sm-8 offset-sm-2"></object>');
 
     setTimeout(doneLoading, 1000);
 }
