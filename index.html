@@ -6,35 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Followed the quick boot option to save space -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <title>Roth Regatta 2020!</title>
     <meta name="description" content="The virtual hosting site for SBU's Roth Regatta 2020!">
     <meta name="author" content="Undergraduate Student Government (USG) + Stony Brook Computing Society (SBCS)">
+
+    <!-- Tried to do a thing here w/ Sass because of a tutorial I read, I was wrong and don't use it-->
     <link rel="stylesheet" href="scss/custom.scss">
 
     <style>
         body {
-            background-color: #5fe5e4ff; 
+            background-color: #cff0f5; 
         }
         .bg-1 {
-            color: #df2935ff;
+            background-color: #113ccf;
+            color: #ffffff;
+        }
+        .bg-2 {
+            color: #270b69;
         }
     </style>
 </head>
 
 <body>
-    
-    <div class="container-fluid bg-1 text-center vertical-center">
-        <h1>Under Construction: Roth Regatta 2020</h1>
-        <h3>Check out the SBEngaged page and USG + SBCS social media for updates!</h3>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 31ST ROTH REGATTA: ROUND 1 REMAINING TIME: [INSERT TIME]  -->    
+            <div class="col sm-1 md-3">
+                <div class="row text-center">
+                    TEAM NAME
+                </div>
+                <div class="row">
+                    <img class="rounded" src="640x360.png" width="60%" height="60%">
+                </div>
+            </div>
+            <div class="col sm-1 md-3">
+                <div class="row text-center">
+                    TEAM NAME
+                </div>
+                <div class="row">
+                    <img class="rounded" src="640x360.png" width="60%" height="60%">
+                </div>
+            </div>
+            <div class="col sm-1 md-3">
+                <div class="row text-center">
+                    TEAM NAME
+                </div>
+                <div class="row">
+                    <img class="rounded" src="640x360.png" width="60%" height="60%">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <!-- THE GRAPH VISUALIZATION -->
+            </div>
+            <div class="col text-center">
+                
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffxswdaqd0dDNrDRfrqoFxwNRHQ55NLbkj0KaMkJ1e5b_6Iw/viewform?embedded=true" width="640" height="595" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
     </div>
-    
-
-    <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+    <div class="container-fluid bg-2 text-center vertical-center">
+        <h3><a href="https://stonybrook.campuslabs.com/engage/event/5706493">SBEngaged Page (and see USG/SBCS social media for updates)</a></h3>
+    </div>
 </body>
 </html>
