@@ -51,6 +51,15 @@ function buildTimer(roundTimeEnd) {
     now = (Date.parse(now) / 1000);
 
     var timeLeft = endTime - now;
+    if(timeLeft <= 0){
+        timeLeft = 0;
+        $("#voting").addClass("hidden");
+        $("#timer").addClass("counted");
+        $("#timer").removeClass("counting");
+    }else{
+        $("#timer").removeClass("counted");
+        $("#timer").addClass("counting");
+    }
 
     var days = Math.floor(timeLeft / 86400);
     var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
@@ -67,11 +76,15 @@ function buildTimer(roundTimeEnd) {
         seconds = "0" + seconds;
     }
 
-    $("#timer").html(days + " Day(s) " + hours + ":" + minutes);
+    if(timeLeft > 0){
+        $("#timer").html(days + " Day(s) " + hours + ":" + minutes);
 
-    setInterval(function () {
-        buildTimer(roundTimeEnd);
-    }, 60000);
+        setInterval(function () {
+            buildTimer(roundTimeEnd);
+        }, 60000);
+    }else{
+        $("#timer").html("Round Ended!");
+    }
 }
 
 function buildTeams(teamInfo,teamStats) {
@@ -100,22 +113,30 @@ function loadStats(data){
     var statsDataRow = stats.data[2];
     
     var teamStats = {
-        "a": statsDataRow[3],
-        "b": statsDataRow[4],
-        "c": statsDataRow[5]
+        "a": Math.floor(statsDataRow[3] * 100),
+        "b": Math.floor(statsDataRow[4] * 100),
+        "c": Math.floor(statsDataRow[5] * 100)
     }
 
-    console.log(teamStats);
+    var sortable = [];
+    
+    for (var team in teamStats) {
+        sortable.push([team, teamStats[team]]);
+    }
 
-    $('#results').append('<object id="pond" type="image/svg+xml"data="assets/pond.svg" class="col-sm-8 offset-sm-2"></object>');
+    sortable.sort(function(a, b) {
+        return a[1] - b[1];
+    });
 
-    var obj = document.getElementById("pond");
-    var svg = obj.contentDocument;
-    console.log(obj,svg);
-    console.log(700*teamStats.a);
+    console.log(sortable);
 
+    for(var i = 0; i < 3;i++){
+        var place = $("<div class='row col-sm-12 leaderboardRow place"+(3-i)+"'><div class='col-sm-2 offset-sm-1 place'>"+(3-i)+"</div><div class='col-sm-6'>"+sortable[i][0]+"</div><div class='col-sm-2 percent'>"+sortable
+        [i][1]+"%</div></div>")
+        $('#results').prepend(place);
+    }
 
-    setTimeout(doneLoading, 5000);
+    setTimeout(doneLoading, 100);
 }
 
 function doneLoading() {
