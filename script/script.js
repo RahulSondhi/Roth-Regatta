@@ -138,7 +138,7 @@ function loadStats(data){
         $('#results').prepend(place);
     }
 
-    setTimeout(doneLoading, 100);
+    setTimeout(doneLoading, 5000);
 }
 
 function doneLoading() {
