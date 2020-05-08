@@ -115,7 +115,7 @@ function loadStats(data){
     console.log(700*teamStats.a);
 
 
-    setTimeout(doneLoading, 1000);
+    setTimeout(doneLoading, 5000);
 }
 
 function doneLoading() {
