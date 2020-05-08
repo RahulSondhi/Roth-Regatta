@@ -1,24 +1,24 @@
 {
     "teamInfo": {
         "teamA": {
-            "name": "MSA Safina - Agraboat",
-            "img": "./assets/teamA-MSA Safina - Agraboat.png"
+            "name": "The Duckling Forumites- The Forum Sunchaser",
+            "img": "./assets/aheat2.png"
         },
         "teamB": {
-            "name": "America's Paper Dinghy - America's Cheeks",
-            "img": "./assets/teamB-Americas Paper Dinghy - Americas Cheeks.png"
+            "name": "Goose Gang(Representing the Nature Watchers of Stony Brook University)- Uncle Waldo",
+            "img": "./assets/bheat2.png"
         },
         "teamC": {
-            "name": "1B2C - Bibbidi-Bobbidi-Boat",
-            "img": "./assets/teamC-1B2C - Bibbidi-Bobbidi-Boat.jpg"
+            "name": "PUSO- PUSO of the Sea",
+            "img": "./assets/cheat2.jpg"
         }
     },
     "roundInfo": {
-        "roundNumber":1,
-        "roundTimeEnd":"May 8, 2020 16:30:00"
+        "roundNumber":2,
+        "roundTimeEnd":"May 8, 2020 19:30:00"
     },
     "formInfo":{
-        "formLink": "https://forms.gle/9SB9sz9cWrepypgF8",
-        "resultSheetLink":"https://docs.google.com/spreadsheets/d/e/2PACX-1vTNDKM4SGhsczRjWhtMJ9CCy3XKQTtculQo4gkP0CPnkOfz9WN1HIXby-T8zwyqrF0jOd8o2WDUln9m/pub?gid=1378661190&single=true&output=csv"
+        "formLink": "https://forms.gle/3yFp3Jm2zaS1TpzX8",
+        "resultSheetLink":"https://docs.google.com/spreadsheets/d/e/2PACX-1vRIJGtnkSCuXVgITkWhSXd2x6LFFFjGXD9z46zovU4JwP_Wsf1mXNF0Oo1buVSYznq4lcATbdZlOdae/pub?gid=1624770661&single=true&output=csv"
     }
 }
