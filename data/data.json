@@ -1,24 +1,24 @@
 {
     "teamInfo": {
         "teamA": {
-            "name": "The Duckling Forumites- The Forum Sunchaser",
-            "img": "./assets/aheat2.png"
+            "name": "Phi Delta Epsilon - Ohana means Phamily",
+            "img": "./assets/heat3a.png"
         },
         "teamB": {
-            "name": "Goose Gang(Representing the Nature Watchers of Stony Brook University)- Uncle Waldo",
-            "img": "./assets/bheat2.png"
+            "name": "Sigma Delta Tau - The Tangled Tanker",
+            "img": "./assets/heat3b.png"
         },
         "teamC": {
-            "name": "PUSO- PUSO of the Sea",
-            "img": "./assets/cheat2.png"
+            "name": "CHILL's Frozen Interns- CHILL-y Waters",
+            "img": "./assets/heat3c.png"
         }
     },
     "roundInfo": {
-        "roundNumber":2,
-        "roundTimeEnd":"May 8, 2020 19:30:00"
+        "roundNumber":3,
+        "roundTimeEnd":"May 8, 2020 21:30:00"
     },
     "formInfo":{
-        "formLink": "https://forms.gle/3yFp3Jm2zaS1TpzX8",
-        "resultSheetLink":"https://docs.google.com/spreadsheets/d/e/2PACX-1vRIJGtnkSCuXVgITkWhSXd2x6LFFFjGXD9z46zovU4JwP_Wsf1mXNF0Oo1buVSYznq4lcATbdZlOdae/pub?gid=1624770661&single=true&output=csv"
+        "formLink": "https://forms.gle/QDRuGGqHxp8VuRDD6",
+        "resultSheetLink":"https://docs.google.com/spreadsheets/d/e/2PACX-1vQYknmvr25Pz3FLeoh8noAHu2SVHkDQygU0A79M-KIvoIbNDc1LDnCCVTRYvYEytYLRJxR7px6RdxP-/pub?gid=1221365884&single=true&output=csv"
     }
 }
