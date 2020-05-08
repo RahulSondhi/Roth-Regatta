@@ -1,21 +1,21 @@
 {
     "teamInfo": {
         "teamA": {
-            "name": "Team A",
-            "img": "./assets/640x360.png"
+            "name": "MSA Safina - Agraboat",
+            "img": "./assets/teamA-MSA Safina - Agraboat.png"
         },
         "teamB": {
-            "name": "Team B",
-            "img": "./assets/640x360.png"
+            "name": "America's Paper Dinghy - America's Cheeks",
+            "img": "./assets/teamB-Americas Paper Dinghy - Americas Cheeks.png"
         },
         "teamC": {
-            "name": "Team C",
-            "img": "./assets/640x360.png"
+            "name": "1B2C - Bibbidi-Bobbidi-Boat",
+            "img": "./assets/teamC-1B2C - Bibbidi-Bobbidi-Boat.jpg"
         }
     },
     "roundInfo": {
         "roundNumber":1,
-        "roundTimeEnd":"May 30, 2020 11:59:59"
+        "roundTimeEnd":"May 8, 2020 15:00:00"
     },
     "formInfo":{
         "formLink": "https://docs.google.com/forms/d/e/1FAIpQLSffxswdaqd0dDNrDRfrqoFxwNRHQ55NLbkj0KaMkJ1e5b_6Iw/viewform",
