@@ -96,7 +96,7 @@ body {
     font-size: 1.3rem;
     background-color: var(--light-grass);
     text-align: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, var(--light-grass) 35%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, var(--light-grass) 20%);
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -149,10 +149,6 @@ body {
     background-color:rgba(255,255, 255, 0.5);
     padding: 1rem;
     border-radius: 1rem;
-}
-
-.logoR{
-    width: 25%;
 }
 
 .logo:hover{
