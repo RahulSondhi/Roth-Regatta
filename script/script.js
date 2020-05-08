@@ -3,19 +3,16 @@ $(function () {
 
     loadMobile(getViewport());
 
-    $(window).bind('resize', function(e){
-        console.log('window resized..');
-        loadMobile(getViewport());
-    });
+    // $(window).bind('resize', function(e){
+    //     loadMobile(getViewport());
+    // });
 });
 
 function loadMobile(size) {
     if(size == "sm" || size == "xs"){
         $('.cloud').html('');
-        $('#vote').html('<div class="button col-sm-6 offset-sm-3" onclick="window.location.href='+"'https://docs.google.com/forms/d/e/1FAIpQLSffxswdaqd0dDNrDRfrqoFxwNRHQ55NLbkj0KaMkJ1e5b_6Iw/viewform'"+'">Vote Here</div>');
     }else{
         $('.cloud').html('<object type="image/svg+xml"data="assets/cloud.svg"></object>');
-        $('#vote').html('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSffxswdaqd0dDNrDRfrqoFxwNRHQ55NLbkj0KaMkJ1e5b_6Iw/viewform?embedded=true" width="640" height="595" frameborder="0" marginheight="0" marginwidth="0" class="col-sm-10 offset-sm-1 col-md-5 offset-md-0">Loading…</iframe>')
     }
 }
 
@@ -83,7 +80,7 @@ function buildTeams(teamInfo,teamStats) {
     for (var key of keys) {
 
         var team = teamInfo[key];
-        var component = $("<div><div class='text-center'>" + team.name + "</div><img class='rounded img-fluid' src='" + team.img + "'></div>");
+        var component = $("<div><div class='text-center'>" + team.name + "</div><img class='text-center rounded img-fluid' src='" + team.img + "'></div>");
 
         if (key == "teamC") {
             component.addClass("col-sm-8 col-md-6 offset-sm-2 offset-md-3");

@@ -73,4 +73,9 @@ body {
     color: white !important; 
 }
 
+.img-fluid{
+    margin: auto;
+    display: block;
+}
+
 
