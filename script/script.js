@@ -67,11 +67,11 @@ function buildTimer(roundTimeEnd) {
         seconds = "0" + seconds;
     }
 
-    $("#timer").html(days + " Day(s) " + hours + ":" + minutes + ":" + seconds);
+    $("#timer").html(days + " Day(s) " + hours + ":" + minutes);
 
     setInterval(function () {
         buildTimer(roundTimeEnd);
-    }, 1000);
+    }, 60000);
 }
 
 function buildTeams(teamInfo,teamStats) {
@@ -107,7 +107,13 @@ function loadStats(data){
 
     console.log(teamStats);
 
-    $('#results').html('<object type="image/svg+xml"data="assets/pond.svg" class="col-sm-8 offset-sm-2"></object>');
+    $('#results').append('<object id="pond" type="image/svg+xml"data="assets/pond.svg" class="col-sm-8 offset-sm-2"></object>');
+
+    var obj = document.getElementById("pond");
+    var svg = obj.contentDocument;
+    console.log(obj,svg);
+    console.log(700*teamStats.a);
+
 
     setTimeout(doneLoading, 1000);
 }
