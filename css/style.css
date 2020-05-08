@@ -20,6 +20,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: FredokaOne;
+    overflow-x: hidden;
 }
 
 .hidden{
@@ -95,7 +96,7 @@ body {
     font-size: 1.3rem;
     background-color: var(--light-grass);
     text-align: center;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, var(--light-grass) 45%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 35%, var(--light-grass) 35%);
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -142,5 +143,20 @@ body {
 
 .place3{
     background-color: var(--bronze);
+}
+
+.timerRow{
+    background-color:rgba(255,255, 255, 0.5);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.logoR{
+    width: 25%;
+}
+
+.logo:hover{
+    background-color:rgba(223, 41, 53, 0.383);
+    border-radius: 0.25rem;
 }
 
