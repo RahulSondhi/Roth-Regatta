@@ -1,0 +1,20 @@
+{
+    "teamInfo": {
+        "teamA": {
+            "name": "Team A",
+            "img": "./assets/640x360.png"
+        },
+        "teamB": {
+            "name": "Team B",
+            "img": "./assets/640x360.png"
+        },
+        "teamC": {
+            "name": "Team C",
+            "img": "./assets/640x360.png"
+        }
+    },
+    "roundInfo": {
+        "roundNumber":1,
+        "roundTimeEnd":"May 30, 2020 11:59:59"
+    }
+}

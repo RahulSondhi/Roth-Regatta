@@ -1,0 +1,76 @@
+@font-face {
+    font-family: FredokaOne;
+    src: url(../assets/FredokaOne-Regular.ttf);
+}
+
+:root {
+    --water: #5fe5e4ff;
+    --light-grass: #5bcb84ff;
+    --dark-grass: #3d7068ff;
+    --ground: #544b3dff;
+    --sbu-red: #df2935ff;
+}
+
+body {
+    background-color: #cff0f5;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: FredokaOne;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.pageTitle{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 3rem;
+}
+
+.pageSubtitle{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.pageSeperator{
+    margin-bottom: 2rem;
+}
+
+.button{
+    padding: 1.2rem;
+    text-align: center;
+    background-color: var(--light-grass);
+    color: white;
+    border-radius: 1em;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--dark-grass);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.6em 0.1em rgba(71, 69, 69, 0.4), 0 0.6em 0.1em rgba(71, 69, 69, 0.4);
+}
+
+.button:active{
+    background-color: var(--dark-grass);
+    transform: translateY(0.5rem);
+    box-shadow: 0 0 0 0;
+}
+
+#footer{
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    background-color: var(--light-grass);
+    text-align: center;
+}
+
+#footer a:link,
+#footer a:visited{
+    color: white !important; 
+}
+
+
