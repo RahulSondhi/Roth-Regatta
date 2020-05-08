@@ -56,6 +56,8 @@ function buildTimer(roundTimeEnd) {
         $("#voting").addClass("hidden");
         $("#timer").addClass("counted");
         $("#timer").removeClass("counting");
+        $("#resultsTitle").html("Results");
+        $("#timer").html("Round Ended!");
     }else{
         $("#timer").removeClass("counted");
         $("#timer").addClass("counting");
@@ -82,8 +84,6 @@ function buildTimer(roundTimeEnd) {
         setInterval(function () {
             buildTimer(roundTimeEnd);
         }, 60000);
-    }else{
-        $("#timer").html("Round Ended!");
     }
 }
 
@@ -110,13 +110,15 @@ function buildTeams(teamInfo,teamStats) {
 
 function loadStats(data){
     var stats = Papa.parse(data);
+    var statsHeaderRow = stats.data[0];
     var statsDataRow = stats.data[2];
     
-    var teamStats = {
-        "a": Math.floor(statsDataRow[3] * 100),
-        "b": Math.floor(statsDataRow[4] * 100),
-        "c": Math.floor(statsDataRow[5] * 100)
-    }
+    var teamStats = {};
+    
+    teamStats[statsHeaderRow[3]]= Math.floor(statsDataRow[3] * 100);
+    teamStats[statsHeaderRow[4]]= Math.floor(statsDataRow[4] * 100);
+    teamStats[statsHeaderRow[5]]= Math.floor(statsDataRow[5] * 100);
+    
 
     var sortable = [];
     
