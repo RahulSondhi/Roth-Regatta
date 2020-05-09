@@ -1,24 +1,24 @@
 {
     "teamInfo": {
         "teamA": {
-            "name": "Phi Delta Epsilon - Ohana means Phamily",
-            "img": "./assets/heat3a.png"
+            "name": "The Duckling Forumites- The Forum Sunchaser",
+            "img": "./assets/aheat2.png"
         },
         "teamB": {
-            "name": "Sigma Delta Tau - The Tangled Tanker",
-            "img": "./assets/heat3b.png"
+            "name": "1B2C - Bibbidi-Bobbidi-Boat",
+            "img": "./assets/heat4b.png"
         },
         "teamC": {
-            "name": "CHILL's Frozen Interns- CHILL-y Waters",
-            "img": "./assets/heat3c.png"
+            "name": "Phi Delta Epsilon - Ohana means Phamily",
+            "img": "./assets/heat3a.png"
         }
     },
     "roundInfo": {
-        "roundNumber":3,
-        "roundTimeEnd":"May 8, 2020 21:45:00"
+        "roundNumber":4,
+        "roundTimeEnd":"May 9, 2020 17:00:00"
     },
     "formInfo":{
-        "formLink": "https://forms.gle/QDRuGGqHxp8VuRDD6",
-        "resultSheetLink":"https://docs.google.com/spreadsheets/d/e/2PACX-1vQYknmvr25Pz3FLeoh8noAHu2SVHkDQygU0A79M-KIvoIbNDc1LDnCCVTRYvYEytYLRJxR7px6RdxP-/pub?gid=1221365884&single=true&output=csv"
+        "formLink": "https://forms.gle/NJxQj2bQsY3WuDf2A",
+        "resultSheetLink":"https://docs.google.com/spreadsheets/d/e/2PACX-1vRnwVKNr36ZP11YmC36EYYRV8E60qs6CCDhwccJnyC3lDRzDdas66HBgQw5Fwg2ReSyT1L83ao44p_q/pub?gid=1555091862&single=true&output=csv"
     }
 }
